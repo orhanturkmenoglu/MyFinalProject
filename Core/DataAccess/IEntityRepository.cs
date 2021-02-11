@@ -22,6 +22,6 @@ namespace Core.DataAccess
         void Update(T entity);
         void Delete(T entity);
 
-        List<T> GetAllByCategory(int categoryId); // ürünleri categoryId sine göre getir.
+        //List<T> GetAllByCategory(int categoryId); // ürünleri categoryId sine göre getir.
     }
 }

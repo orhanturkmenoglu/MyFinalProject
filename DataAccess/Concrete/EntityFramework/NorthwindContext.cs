@@ -13,7 +13,7 @@ namespace DataAccess.Concrete.EntityFramework
         // Trusted_Connection=true :kullanıcı adı şifre gerekmeden girmek için yazdık
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=LAPTOP-FU80MA6U\SQLEXPRESS;Database=Northwind;Trusted_Connection=true"); // hangi veritabanına baglanıcagımızı yazacagız
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=true"); // hangi veritabanına baglanıcagımızı yazacagız
         }
 
         // burda hangi classımız hangı tabloya karsılık geldinigini belirtmemiz lazım.

@@ -48,13 +48,22 @@ namespace ConsoleUI
 
 
 
-            CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
+            //CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
 
-            foreach (var category in categoryManager.GetAll())
+            //foreach (var category in categoryManager.GetAll())
+            //{
+            //    Console.WriteLine(category.CategoryName);
+            //}
+
+
+            // Dto : Data Transformation object
+
+            ProductManager productManager = new ProductManager(new EfProductDal());
+
+            foreach (var product in productManager.GetProductDetails())
             {
-                Console.WriteLine(category.CategoryName);
+                Console.WriteLine(product.ProductName+"/"+product.CategoryName);
             }
-
 
 
 

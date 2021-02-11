@@ -60,14 +60,7 @@ namespace Core.DataAccess.EntityFramework
             }
         }
 
-        public List<TEntity> GetAllByCategory(int categoryId)
-        {
-            using (TContext context = new TContext())
-            {
-                return context.Products.Where(p => p.CategoryId == categoryId).ToList();
-            }
-        }
-
+   
         public void Update(TEntity entity)
         {
             using (TContext context = new TContext())
